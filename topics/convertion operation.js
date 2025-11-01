@@ -12,3 +12,28 @@ console.log(typeof score);
 // we can use three as convertion 1st number 2nd boolean 3rd string 
 
 
+//***************operation****************/
+
+let value = 4 
+let negvalue = -value
+console.log(negvalue);
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2);   //it means 2 ki power 2 
+console.log(2/2);
+console.log(2%2);  // it gives you the remainder 
+
+// prefix and postfix operator 
+// ++a it is prefix 
+// a++ it is postfix 
+
+
+
+
+
+
+
+
+
