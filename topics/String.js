@@ -7,4 +7,16 @@ console.log(gameName.length);
 console.log(gameName.toUpperCase());
 console.log(gameName.charAt(5));
 
+const newStringOne = "      tushar     ";
+console.log(newStringOne);
+console.log(newStringOne.trim());
+
+
+const url = "tushartyagi00001.com";
+console.log(url.includes('00001'));
+console.log(url.includes('0'));
+
+
+
+
 
