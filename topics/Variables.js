@@ -4,6 +4,7 @@ console.log(planet);
 planet = "mars";
 console.log(planet);
 
+// boolean
 const userName = "tushar";
 let loginStatus = false;
 console.log(userName)
