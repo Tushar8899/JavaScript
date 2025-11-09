@@ -10,4 +10,4 @@ console.log(myCreatedDate.toDateString());
 let newDate = new Date();
 console.log(newDate.getTime());
 console.log(newDate.getHours());
-console.log(newDate.getMonth());
+console.log(newDate.getMonth()); 
