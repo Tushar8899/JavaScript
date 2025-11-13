@@ -29,6 +29,23 @@ const myn2 = myArr.splice(1, 3) // but splice manipulate  the actual array and i
 console.log("c ", myArr);
 console.log(myn2);
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const teachers = [ "raman" ,  " shyam", " rani"] ;
+const students = [ "tushar" , " siddharth", " vishal"];
+
+// teachers.push(students); // push second wale array ko ek hi element manta h or ye existing array pe hi work krta h 
+// console.log(teachers);
+
+// const combine = teachers.concat(students); // concat second array sabhi element ko combine krta h or iske liye ek new const banana padta h ye existing array pe work nhi krta 
+// console.log(combine);
+
+const all_combine = [ ...teachers, ...students]; // ye three dot ... spread hai , isme array k sare element spread ho jate h , 
+console.log(all_combine);
+
+
+
+
 
 
 
