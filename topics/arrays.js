@@ -43,6 +43,12 @@ const students = [ "tushar" , " siddharth", " vishal"];
 const all_combine = [ ...teachers, ...students]; // ye three dot ... spread hai , isme array k sare element spread ho jate h , 
 console.log(all_combine);
 
+const another_array = [1, 2, 3,[4, 5, 6], 7, [6, 7, [4, 5]]];
+const real_another_array = another_array.flat(Infinity);
+
+console.log(real_another_array);
+
+
 
 
 
