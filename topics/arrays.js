@@ -48,6 +48,19 @@ const real_another_array = another_array.flat(Infinity);
 
 console.log(real_another_array);
 
+console.log(Array.isArray("tushar"));
+console.log(Array.from("tushar"));
+console.log(Array.from({name : "tushar"}));  // in this we specify that what we want to make array , keys or value 
+
+let score1 = 300;
+let score2 = 400;
+let score3 = 500;
+
+console.log(Array.of(score1,score2,score3));  // of is also make array from values 
+
+
+
+
 
 
 
