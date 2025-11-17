@@ -39,3 +39,21 @@ const obj4 = Object.assign({}, obj1,obj2,obj3);  //.assign is used to combine ob
 // console.log(Object.values(student_info)); // it gives you result in array 
 console.log(Object.entries(student_info)); 
 
+// objects destructure
+const course = { 
+  coursename : "bca",
+  fees : " 500",
+  teacher: "itself"
+}
+
+const { teacher: tea} = course
+// console.log(teacher);
+console.log(tea);
+
+
+// object me key ko string me store nhi krte but value ko string me store krte h 
+// json me key or value dono string me store hoti h , or jese object ka name hota h json api ka name nhi hota , json = javascript object notation 
+// {
+//   "name" : "tushar",
+//   " course" : "bca"
+// }
