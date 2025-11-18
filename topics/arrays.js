@@ -58,6 +58,19 @@ let score3 = 500;
 
 console.log(Array.of(score1,score2,score3));  // of is also make array from values 
 
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+// Converting array of user objects to just their names
+const users = [
+  { id: 1, name: 'Alice' },
+  { id: 2, name: 'Bob' },
+  { id: 3, name: 'Charlie' }
+];
+
+const userNames = users.map(user => user.name);
+console.log(userNames); // ['Alice', 'Bob', 'Charlie']
+
+
 
 
 
