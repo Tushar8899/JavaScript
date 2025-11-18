@@ -70,6 +70,31 @@ const users = [
 const userNames = users.map(user => user.name);
 console.log(userNames); // ['Alice', 'Bob', 'Charlie']
 
+const numbers = [1, 2, 3];
+
+const result = numbers.forEach(num => console.log(num * 2));
+// Output: 2, 4, 6 (just logs)
+console.log(result); // undefined
+console.log(numbers); // [1, 2, 3] - Original unchanged
+const fruits = ['apple', 'banana', 'orange'];
+
+fruits.forEach(fruit => console.log(fruit));
+
+
+// When to Use forEach():
+// When you need to perform an action for each item
+// When you don't need a new array
+// For side effects like:
+// Logging values
+// Updating DOM elements
+// Saving to database
+// Modifying external variables
+// When NOT to Use forEach():
+// When you need to transform data (use map() instead)
+// When you need to filter data (use filter() instead)
+// When you need to stop early (use for loop instead)
+
+
 
 
 
