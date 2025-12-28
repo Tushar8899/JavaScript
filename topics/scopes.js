@@ -32,7 +32,7 @@ function one (num){         // it is called function
 
 console.log(one(3));             // it can be access before initialisation 
 
-const addTwo = function(num){                     // it is called expression
+const addTwo = function(num){                     // it is called expression  , curly brases is the scope
   return num + 3
 }
 console.log(addTwo(3));               // it cannot be access before initialisation 
