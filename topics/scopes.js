@@ -26,13 +26,15 @@ if (true){
 
 //+++++++++++++++++++++++++++ function and expression ++++++++++++++++++++++++++++++++++
 
-function one (num){         // it is called function 
+function addone (num){         // it is called function 
   return num+1
 }
 
 console.log(one(3));             // it can be access before initialisation 
 
-const addTwo = function(num){                     // it is called expression  , curly brases is the scope
+const addTwo = function(num){                     // it is called expression  , curly brases is the scope , expression can hold anything like jsons
   return num + 3
 }
 console.log(addTwo(3));               // it cannot be access before initialisation 
+
+
