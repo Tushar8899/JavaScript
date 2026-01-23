@@ -1,1 +1,1 @@
-console.log(myArr[]);
+ // console.log(this);
