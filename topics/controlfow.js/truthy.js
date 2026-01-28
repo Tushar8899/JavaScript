@@ -15,9 +15,12 @@ if (Object.keys(emptyObj).length === 0 ) {          // aise hum pta laga sakte h
 
 let val1;
 // val1 = 5 ?? 10 
-// val1 = null ?? 19    // null ko nhi display krta 
-val1 = undefined ?? 14
+// val1 = null ?? 19    // nulloe undefined  ko nhi display krta 
+// val1 = undefined ?? 14
 
 
-console.log(val1);
+// console.log(val1); 
+
+// terniary operator
+// condition ? true : false 
 
