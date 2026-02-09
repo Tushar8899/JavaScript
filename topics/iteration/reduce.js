@@ -19,9 +19,9 @@ const shoppingCart = [
     price : 9999
   },
   { itemName: "dev course" ,
-    price : 23991
+    price : 23991                                     
   }
 ]
 
-const priceToPay = shoppingCart.reduce( (acc , item) => acc + item.price , 0 )
+const priceToPay = shoppingCart.reduce( (acc , item) => acc + item.price , 0 )        // ye 0 bydefault value dikhata h , iska matlab yha pe bydefault price to pay 0 h
 console.log(priceToPay);
