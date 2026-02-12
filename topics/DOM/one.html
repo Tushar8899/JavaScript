@@ -1,17 +1,36 @@
-
- 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <title>DOM learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Learning</title>
 </head>
-<body class="bg-black">
-         <div >
-               <h1 id="title" class="heading"> Tushar Tyagi </h1>
-               <p> I am a BCA student </p>  
-        </div>
+<body style="background-color: black; color: aliceblue;">
+  <div class="parent">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+  </div>
+  
 </body>
+<script>
+const parent = document.querySelector('.parent')            // yha pe query selector se .parent class ko targett kiya ja rha h 
+// console.log(parent);
+// console.log(parent.children);                             // yha pe parent k child ko target kiya ja rha h 
+// console.log(parent.children[1].innerHTML);               // yha pe parent k first index pe jo child h uska  inner html ko print karaya ja rha h 
+for (let i = 0; i < parent.children.length; i++) {
+console.log(parent.children[i].innerHTML);                     // for loop laga k parent k sare child ki value console karai ja rhi h 
+}
+ parent.children[1].style.color = "orange"       // yha jo first index pe jo child h uska color change kara ja rha h 
+// console.log(parent.firstElementChild);          // parent ka firstelement child console karaya ja rha h 
+// console.log(parent.lastElementChild);           // yha pe last 
+const dayOne = document.querySelector('.day')           
+// console.log(dayOne);
+// console.log(dayOne.parentElement);             // dayone k parent element ko console karaya ja rha h 
+// console.log(dayOne.nextElementSibling);          // yha uske next sibling ko  
+
+console.log("NODES :" , parent.childNodes );
+
+</script>
 </html>
