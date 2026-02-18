@@ -1,0 +1,8 @@
+ javascript is a scynchronous and single threaded , ye default javascript me hoti h 
+
+ it execute one line of code at a time. 
+  
+
+Blocking code                     vs            Non blocking code
+it block the flow of program                it not block execution 
+read file sync                               read file async
