@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+  <h1> demo program </h1>
+  <p> <ul>
+    <li id=" say">
+      hello 
+    </li>
+    <li id=" told"> hi </li>
+  </ul></p>
+</body>
+<script>
+   // jab hum addeventlistener use krte h to usme by default 3rd parameter false hota h , means vo bubbling use kr rha h 
+   // agar 3rd parameter true kr diya to vo captcharing mode me ho jata h 
+   // bubbling me bottom to top jata h , captchring me top to bottom jate h 
+   //example 
+   document.getElementById('say').addEventListener( 'click' , function(e){
+    console.log("i am tushar");
+   } , false )
+   e.stopPropogation()  // isko me jab use krte h jab hume bubbling nhi karani ho 
+</script>
+</html>
