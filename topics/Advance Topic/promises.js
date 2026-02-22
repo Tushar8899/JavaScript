@@ -1,4 +1,4 @@
-const promiseOne = new Promise(function(resolve, reject) {              // hum  promise k andar ek funtion likhte h
+const promiseOne = new Promise(function(resolve, reject) {              // hum  promise k andar ek funtion likhte h , and promise ek object hota h 
   // Do an async task
   // DB calls
   // network call 
@@ -57,3 +57,30 @@ console.log(username);
 console.log(error); 
 }).finally (() => console.log("The promise is either resolved or rejected"))       // .finally() to chalta hi chalta h resolved ho ya reject , it is like default
 
+
+const promiseFive = new Promise(function(resolve, reject) {
+setTimeout(function(){
+let error = true
+if (!error) {
+resolve({username: "javascript", password:
+"123"})
+} else {
+reject('ERROR: JS went wrong')
+}
+}, 1000)
+})
+ 
+async function consumePromiseFive(){           // async await directly error ko handle nhi kr sakta , fir try catch method se handle krte h 
+
+// const response = await promiseFive
+// console.log(response);
+// }
+try {
+const response = await promiseFive        // promise object h , isye () nhi use kiya 
+console.log(response);
+} catch (error) {
+console.log(error);
+}
+}
+
+consumePromiseFive()
