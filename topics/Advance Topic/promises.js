@@ -84,3 +84,27 @@ console.log(error);
 }
 
 consumePromiseFive()
+
+
+// async function getAllUsers(){
+// try {
+// const response = await fetch('https://jsonplaceholder.typicode.com/users')
+// const data = await response.json()                 // yha pe await use isliye kiya kyuki .json() ko bhi response krne me time lagta h 
+// console.log(data);
+// }
+//  catch (error) {
+// console.log("E: ", error);
+// }
+// }
+// getAllUsers()
+
+
+ // ye jo upar comment kya h async iski terha hi same result dega ye , bss vo async se kiye h ye then and catch se 
+fetch('https://jsonplaceholder.typicode.com/users') 
+.then((response) => {
+  return response.json()
+})
+.then((data) => {
+  console.log(data);
+})
+.catch((error) => console.log(error)) 
