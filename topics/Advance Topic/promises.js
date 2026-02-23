@@ -108,3 +108,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
   console.log(data);
 })
 .catch((error) => console.log(error)) 
+
+// important = fetch() ki special queue banti h jab usko use krte h uska name hota h micro task queue , or priority queue , or async ki alag task queue  banti h 
+//fetch() is a built-in browser function that goes to a URL, asks for data (or sends data), and brings a response back.
