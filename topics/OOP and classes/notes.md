@@ -8,3 +8,14 @@
 
 ## parts of oop 
   object literals 
+
+  -constructor function 
+  -prototype 
+  -classes 
+  -Instance ( new , This )
+
+  ## 4 pillars
+  Abstraction 
+  incapsulation 
+  inheritance 
+  polymorphism
