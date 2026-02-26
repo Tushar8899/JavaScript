@@ -1,7 +1,15 @@
 const user = {
   username: "Tushar " ,
   loginCount: 8 ,
-  singedIn: true
+  singedIn: true, 
+
+   getUserDetail: function() {
+  // console.log("get user details from database");
+    console.log(`Username: ${this.username}`);      // yha pe this keyword ka matlab h ki vo isi object ki bat kr rha h , agar this nhi lagatte to ye bhar k context samajhta h 
+    
+   }
 }
 
-console.log(user.username);
+//console.log(user.username);
+console.log(user.getUserDetail());
+
