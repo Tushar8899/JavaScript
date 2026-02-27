@@ -15,5 +15,13 @@ const user = {
 
 
 //constructor funtion 
-const promiseOne = new Promise()      // is new ka matlab constructor function
-const date = new Date()
+//const promiseOne = new Promise()      // is new ka matlab constructor function
+//const date = new Date()
+
+function User(username, loginCount, isLoggedIn){
+  this.username = username;
+  this.loginCount = loginCount;
+  this.isLoggedIn = isLoggedIn;
+
+  return this 
+}
