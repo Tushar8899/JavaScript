@@ -25,3 +25,10 @@ function User(username, loginCount, isLoggedIn){
 
   return this 
 }
+const userOne = new User("tuhsar", 12, true) 
+const userTwo = new User("sury", 12, false)   // yha pe ye second wala user first wale ko overwrite kr deta h aise, to isko shi krne k liye hum new keyword ka use krte h 
+console.log(userOne);
+console.log(userTwo); 
+
+// constructor funtion har bar ek new instance deta h 
+// jab hum new keyworrd use krte h to sabse phle ek empty object create hota h jisko hum instance bolte h 
