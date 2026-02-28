@@ -1,0 +1,1 @@
+// javascript ka default behaviour prototypel behaviour h , isi ko inheritance bolte h  
