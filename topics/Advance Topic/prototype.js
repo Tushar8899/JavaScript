@@ -59,10 +59,22 @@ Array.prototype.heyTushar = function(){                      // yha pe heyTushar
   
 } 
 
-myHeros.Tushar() 
-heroPower.heyTushar()       // yha pe error aaiga kyuki humne heyTushar array me inject kiya to usko hum object me acces nhi kr sakte 
+// myHeros.Tushar() 
+// heroPower.heyTushar()       // yha pe error aaiga kyuki humne heyTushar array me inject kiya to usko hum object me acces nhi kr sakte 
 
 
 // inheritance 
 // har object ka apna alag instance hota h 
-// aajkal .setPrototypeOf se inheritance krte h but phle __proto__ se inhertance krte the  ( isko yaad rakhna h )
+// aajkal .setPrototypeOf se inheritance krte h but phle __proto__ se inhertance krte the  ( isko yaad rakhna h)
+
+
+// yha pe humne har string ko ek truelength method inject kra h , usko andar fir humne trim function call kiya h taki hume string ki true length mile space ko hata h 
+
+String.prototype.trueLength = function(){
+  console.log(`${this}`);
+  console.log(`True length is : ${this.trim().length}`);
+  
+  
+}
+
+"tushar   ".trueLength()
