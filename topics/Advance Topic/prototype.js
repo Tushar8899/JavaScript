@@ -78,3 +78,5 @@ String.prototype.trueLength = function(){
 }
 
 "tushar   ".trueLength()
+
+// this refer krta h window me window object ko, or node me ye empty aata h 
